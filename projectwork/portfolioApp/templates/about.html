@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Me</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+</head>
+<body>
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="profile-image">
+      <img src="{% static 'img/kosi.jpg' %}" alt="My Photo">
+    </div>
+    <div class="profile-info">
+      <p>I'm a passionate web developer with 5 years of experience in the tech industry. I specialize in front-end development, working primarily with HTML, CSS, JavaScript, and React. I enjoy working on interactive web applications and crafting seamless user experiences.</p>
+      <p>I'm driven by a curiosity to learn and adapt to new technologies and enjoy solving complex problems. In my free time, I love exploring new places, reading science fiction, and contributing to open-source projects.</p>
+    </div>
+    <div class="skills">
+      <h3>Skills</h3>
+      <ul>
+        <li><strong>HTML5:</strong> Proficient in creating structured, semantic web pages.</li>
+        <li><strong>CSS3:</strong> Experienced in designing responsive and visually appealing layouts.</li>
+        <li><strong>JavaScript:</strong> Skilled in building dynamic and interactive features.</li>
+        <li><strong>React:</strong> Knowledgeable in developing component-based applications.</li>
+        <li><strong>Git:</strong> Competent in version control and collaborative development.</li>
+      </ul>
+    </div>
+    <div class="education">
+      <h3>Education</h3>
+      <ul>
+        <li><strong>Degree:</strong> Bachelor of Science in Computer Science</li>
+        <li><strong>Institution:</strong> XYZ University</li>
+        <li><strong>Year:</strong> 2018</li>
+      </ul>
+    </div>
+    <div class="navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+      </ul>
+    </div>
+  </section>
+</body>
+</html>
+
+    </div>
+    <div class="profile-info">
+      <p>I'm a passionate [Your Profession] with [Number] years of experience in [Industry]. I specialize in [Skills] and enjoy working on [Projects].</p>
+      <p>I'm driven by [Motivation] and love to [Hobbies].</p>
+    </div>
+    <div class="skills">
+      <h3>Skills</h3>
+      <ul>
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+
+      </ul>
+    </div>
+    <div class="education">
+      <h3>Education</h3>
+      <ul>
+        <li><strong>Degree:</strong> [Degree Name]</li>
+        <li><strong>Institution:</strong> [Institution Name]</li>
+        <li><strong>Year:</strong> [Year]</li>
+      </ul>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jane Doe's Portfolio</title>
+  {% load  static %}
+
+  <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+</head>
+<body>
+  <header>
+    <h1>Jane Doe's Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="{% url 'about'%}">About</a></li>
+        <li><a href="{% url 'skills'%}">Skills</a></li>
+        <li><a href="{% url projects%}">Projects</a></li>
+        <li><a href="{% url contact%}">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="kosi">
+      <img src="{% static 'img/kosi.jpeg' %}" alt="My Photo">
+    </div>
+    <p>Hello! I'm Jane Doe, a passionate web developer with a love for creating intuitive and dynamic web experiences. With a background in computer science, I have been working in the tech industry for over 5 years. My expertise includes HTML, CSS, JavaScript, and various web development frameworks.</p>
+    <p>I graduated from XYZ University with a degree in Computer Science and have worked with diverse technologies across several projects. My journey in tech began with a curiosity for how websites are built and has evolved into a full-fledged career. I’m particularly interested in front-end development, user experience design, and the integration of new technologies.</p>
+    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying a good book. I’m also an avid learner, always on the lookout for new challenges and opportunities to grow.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>HTML5:</strong> Creating semantic and accessible web structures.</li>
+      <li><strong>CSS3:</strong> Styling web pages with modern layouts, animations, and responsive designs.</li>
+      <li><strong>JavaScript:</strong> Building interactive and dynamic features.</li>
+      <li><strong>React:</strong> Developing user interfaces with a component-based architecture.</li>
+      <li><strong>Node.js:</strong> Server-side programming and API development.</li>
+      <li><strong>Git:</strong> Version control and collaboration using Git and GitHub.</li>
+      <li><strong>Responsive Design:</strong> Ensuring websites work seamlessly on various devices and screen sizes.</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Project One</h3>
+      <p><strong>Description:</strong> A dynamic website built with React that allows users to manage their tasks efficiently. Features include real-time updates, user authentication, and a responsive design.</p>
+      <p><strong>Technologies Used:</strong> React, Node.js, MongoDB, Express</p>
+      <a href="https://github.com/janedoe/project-one" target="_blank">View Project on GitHub</a>
+    </div>
+    <div class="project">
+      <h3>Project Two</h3>
+      <p><strong>Description:</strong> A personal portfolio website showcasing various projects and skills. Designed with a focus on user experience and aesthetics, featuring an interactive contact form and project gallery.</p>
+      <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
+      <a href="https://janedoe.com/portfolio" target="_blank">Visit Portfolio Website</a>
+    </div>
+    <div class="project">
+      <h3>Project Three</h3>
+      <p><strong>Description:</strong> An e-commerce platform with a focus on secure transactions and user-friendly design. Includes product catalog, shopping cart functionality, and payment integration.</p>
+      <p><strong>Technologies Used:</strong> PHP, MySQL, JavaScript</p>
+      <a href="https://github.com/janedoe/ecommerce-platform" target="_blank">View Project on GitHub</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Here's how to contact me:</p>
+    <ul>
+      <li>Email: <a href="mailto:jane.doe@example.com">nwabuezeh7@gmail.com</a></li>
+      <li>Phone: <a href="tel:09013051018">09013051018</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/nwabuezeh7" target="_blank">linkedin.com/in/nwabuezeh7</a></li>
+      <li>GitHub: <a href="https://github.com/nwabuezeh7" target="_blank">github.com/nwabuezeh7</a></li>
+    </ul>
+    <h3>Contact Form</h3>
+    <form id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <br>
+      <button type="submit" id="submit-button">Send</button>
+    </form>
+    <div id="message-container"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Jane Doe</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
